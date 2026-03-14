@@ -392,7 +392,7 @@ static func _prune_cache(cache_hashes_hit: Dictionary[String, bool], max_size_by
 		if raw_records is Dictionary:
 			for key in raw_records:
 				if dir_to_last_use.has(key):
-					dir_to_last_use[key] = raw_records[key]
+					dir_to_last_use[key] = raw_records[key] as int
 
 	# Update record with all cache directories used during the last export run
 	var now: int = Time.get_unix_time_from_datetime_dict(Time.get_datetime_dict_from_system(true))

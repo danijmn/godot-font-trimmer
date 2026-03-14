@@ -32,6 +32,9 @@ the project with intermediate files.
 - **Minimal configuration:** all setup can be done from Project Settings.
 - **Caching:** trimmed fonts are cached so that successive exports are
 very fast, and the cache is pruned automatically.
+- **Detects changes automatically:** once configured, the fonts are trimmed
+again automatically whenever necessary (e.g. when the source text files
+change or the font files / import settings are modified).
 - **Preserves font pre-rendering:** your font's Pre-render Configurations
 are respected.
 > [!NOTE]
@@ -94,3 +97,17 @@ to pass to `fonttools`. Normally this isn't necessary, unless you rely
 on unusual font features which are trimmed away by default. Consult the
 [fonttools subset documentation](https://fonttools.readthedocs.io/en/stable/subset/)
 for a description of possible arguments.
+
+## Notes
+Some projects may encounter the following error, often with multiple
+entries in Godot's console:
+
+`modules/text_server_adv/text_server_adv.cpp:2712 - Parameter "fd" is null.`
+
+**This is unrelated to Font Trimmer, and is completely benign.**
+It is a well-known issue with Godot's font importer that can be triggered
+under several circumstances (e.g. when you reimport the project's default
+font). Font Trimmer needs to reimport fonts when the cache is outdated,
+thus triggering the error indirectly. You can verify that the error also
+occurs when you reimport the font manually - but the font works correctly
+and the error has no consequence.

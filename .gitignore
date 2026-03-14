@@ -1,0 +1,9 @@
+# PROJECT SPECIFIC IGNORES
+# Since the main intent is to ship the plugin, don't include any more files
+# than those strictly necessary, e.g. plugin UIDs should be removed
+addons/**/*.uid
+.editorconfig
+
+# Godot 4+ specific ignores
+.godot/
+/android/

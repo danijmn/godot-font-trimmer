@@ -1,0 +1,51 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Font Trimmer test project"
+config/description="A simple test project for the Font Trimmer export plugin."
+config/version="1.0.0"
+run/main_scene="uid://c86xyil8c1hva"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://test_project_files/icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/font_trimmer/plugin.cfg")
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
+theme/custom_font="uid://d3hfaq17wk4hl"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://test_project_files/strings.en.translation", "res://test_project_files/strings.pt.translation", "res://test_project_files/strings.es.translation", "res://test_project_files/strings.ja.translation")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[plugins]
+
+font_trimmer/fonts_to_character_sources={
+"uid://2gpwvx6x02sd": ["res://test_project_files/strings.ja.translation"],
+"uid://d3hfaq17wk4hl": ["res://test_project_files/strings.en.translation", "res://test_project_files/strings.pt.translation", "res://test_project_files/strings.es.translation"]
+}
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

@@ -1,0 +1,42 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://2gpwvx6x02sd"
+path="res://.godot/imported/NotoSansJP-Regular.ttf-24af99c70befcc768dc1f767d347cd66.fontdata"
+
+[deps]
+
+source_file="res://test_project_files/Noto_Sans_JP/NotoSansJP-Regular.ttf"
+dest_files=["res://.godot/imported/NotoSansJP-Regular.ttf-24af99c70befcc768dc1f767d347cd66.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=true
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=false
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[{
+"chars": [],
+"glyphs": [1220, 1277, 1248, 1139, 1348, 1304, 1378, 1335, 1213, 1303, 1310, 1320, 1356, 1387, 6387, 1244, 4606, 13790, 1369, 1358, 1311, 1222, 1276, 1241, 1283, 12051, 6345, 1226, 1232, 1266, 1233, 1218, 1240, 1243, 1216, 1350, 1372, 1319, 1302, 1273, 2599, 8706, 6250, 4549, 3481, 5311, 1205, 1207, 1247, 7510, 5525, 3703, 12484, 1267, 1203, 1275, 1263, 15277, 2609, 15295, 1230, 1265, 1333, 1308, 1296, 1299, 1370, 1, 39, 80, 79, 85, 53, 83, 74, 78, 70, 5995, 2624, 1242, 15278, 1140, 12041, 4602, 16622, 34, 77, 88, 52, 90, 84, 66, 67, 68, 76, 8, 6527, 3200, 1224, 1239, 14, 2348, 12945, 3079, 4104, 3456, 5234, 14026, 9361, 3908, 8958, 8114, 1274, 15, 36, 55, 1306, 1323, 1318, 1366, 64, 81, 75, 15198, 16, 72, 87, 1212, 3418, 5266, 13915, 3090, 1334, 42, 1368, 11766, 10914, 12124, 1307, 1353, 6316, 6552, 1343, 1330, 47, 43, 12858, 3181, 5745, 14032, 1237, 60, 86, 30, 73, 27, 69, 71, 62, 3402, 8150, 6237, 2953, 3178, 1264, 15270, 7259, 6286, 7496, 3455, 4679, 5313, 2978, 4627, 4069, 1238, 49, 31, 40, 2493, 2346, 1355, 1298, 1326, 11744, 2336, 1228, 1284],
+"name": "japanese-prerendered-glyphs",
+"size": Vector2i(16, 0),
+&"variation_embolden": 0.0
+}]
+language_support={}
+script_support={}
+opentype_features={}

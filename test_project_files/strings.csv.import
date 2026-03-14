@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://mc4ja8qrpw6y"
+
+[deps]
+
+files=["res://test_project_files/strings.en.translation", "res://test_project_files/strings.pt.translation", "res://test_project_files/strings.es.translation", "res://test_project_files/strings.ja.translation"]
+
+source_file="res://test_project_files/strings.csv"
+dest_files=["res://test_project_files/strings.en.translation", "res://test_project_files/strings.pt.translation", "res://test_project_files/strings.es.translation", "res://test_project_files/strings.ja.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

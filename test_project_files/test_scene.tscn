@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://c86xyil8c1hva"]
+
+[ext_resource type="Script" uid="uid://pqcle6pbq3uo" path="res://test_project_files/test_script.gd" id="1_8hil6"]
+[ext_resource type="Theme" uid="uid://b2wg4yxifvlk0" path="res://test_project_files/test_theme.tres" id="1_c1tr7"]
+
+[node name="TestScene" type="Control" unique_id=883426402 node_paths=PackedStringArray("language_selector", "project_link_label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_c1tr7")
+script = ExtResource("1_8hil6")
+language_selector = NodePath("VBoxContainer/HBoxContainer/OptionButton")
+project_link_label = NodePath("VBoxContainer/ProjectLink")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=738704446]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=586620287]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="LanguageHeader" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=749870199]
+layout_mode = 2
+text = "Language:"
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer" unique_id=1676080875]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+selected = 0
+item_count = 4
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "Portuguese"
+popup/item_1/id = 1
+popup/item_2/text = "Spanish"
+popup/item_2/id = 2
+popup/item_3/text = "Japanese"
+popup/item_3/id = 3
+
+[node name="Intro" type="Label" parent="VBoxContainer" unique_id=373911195]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+text = "INTRO"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="FontSetupExplanation" type="Label" parent="VBoxContainer" unique_id=155264432]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+text = "FONT_SETUP_EXPLANATION"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="SetupExplanation" type="Label" parent="VBoxContainer" unique_id=1099716467]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+text = "SETUP_EXPLANATION"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Space" type="Control" parent="VBoxContainer" unique_id=328183022]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="TrimmingWarning" type="Label" parent="VBoxContainer" unique_id=1700250314]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+text = "TRIMMING_WARNING"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer" unique_id=541279078]
+custom_minimum_size = Vector2(700, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+placeholder_text = "BOX_PLACEHOLDER"
+alignment = 1
+virtual_keyboard_enabled = false
+
+[node name="TrimmingSolution" type="Label" parent="VBoxContainer" unique_id=907998695]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+text = "TRIMMING_SOLUTION"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ProjectLink" type="RichTextLabel" parent="VBoxContainer" unique_id=1216115959]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "PROJECT_LINK"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+horizontal_alignment = 1

@@ -58,7 +58,11 @@ the plugin in `Project Settings > Plugins` ("Font Trimmer").
 
 3. Close the Project Settings window, then reopen it. Go to
 `General > Plugins > Font Trimmer` and configure the plugin's settings
-as described below.
+as described in the next section.
+
+   *This repository contains a test project with an example of
+   a typical Font Trimmer configuration. You can try it out
+   by cloning the repository and importing `project.godot` in Godot.*
 
 ### Settings
 - **Fonts to Character Sources:** A dictionary. This is where you define
@@ -102,7 +106,7 @@ for a description of possible arguments.
 Some projects may encounter the following error, often with multiple
 entries in Godot's console:
 
-`modules/text_server_adv/text_server_adv.cpp:2712 - Parameter "fd" is null.`
+`ERROR: modules/text_server_adv/text_server_adv.cpp:2712 - Parameter "fd" is null.`
 
 **This is unrelated to Font Trimmer, and is completely benign.**
 It is a well-known issue with Godot's font importer that can be triggered
